@@ -1,14 +1,31 @@
 body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 640px 50px;
+    grid-template-rows: 200x 640px 50px;
+    background-color: rgb(236, 158, 158)
 }
 h1 {
+    text-align: center;
+    grid-column: 2;
+    font-family: fantasy;
+    font-size: 80px;
+}
+p {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column: 2;
 }
-.clearButton {
-    grid-column: 1;
-    grid-row: 3;
+#clear-button {
+    background-color: rgba(255, 105, 180, 0.801);
+    align-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 1px;
+    font-family: monospace;
+    font-size: large;
+    
+            
 }
 
 
@@ -22,6 +39,8 @@ h1 {
     width: 640px;
     height: 640px;
     margin: 0 auto;
+    border: 30px solid black;
+    border-radius: 30px;
 
     
 }
@@ -29,7 +48,7 @@ h1 {
     width: 40px;
     height: 40px;
     margin: 0 auto;
-    background-color: blue;
+    background-color: rgb(40, 201, 80);
 }
 
 .grid-item-hovered {
